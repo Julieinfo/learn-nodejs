@@ -2,6 +2,8 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 
+const Thing = require('./models/thing');
+
 mongoose.connect('mongodb://julieinfo:oSKzrr8Bv6R0latf@ac-vzmjcws-shard-00-00.osj82rh.mongodb.net:27017,ac-vzmjcws-shard-00-01.osj82rh.mongodb.net:27017,ac-vzmjcws-shard-00-02.osj82rh.mongodb.net:27017/?ssl=true&replicaSet=atlas-dxo06e-shard-0&authSource=admin&appName=Cluster0')
   .then(() => console.log('Connexion à MongoDB réussie !'))
   .catch((err) => console.log('Connexion à MongoDB échouée !', err));
@@ -20,13 +22,16 @@ app.use((req, res, next) => {
 app.use(bodyParser.json());
 
 app.post('/api/stuff', (req, res, next) => {
-  console.log(req.body);
-  res.status(201).json({
-    message: 'Objet créé !'
+  delete req.body._id;
+  const thing = new Thing({
+    ...req.body
   });
+  thing.save()
+    .then(() => res.status(201).json({ message: 'Objet enregistré !'}))
+    .catch(error => res.status(400).json({ error }));
 });
 
-app.get('/api/stuff', (req, res, next) => {
+app.use('/api/stuff', (req, res, next) => {
   const stuff = [
     {
       _id: 'oeihfzeoi',
