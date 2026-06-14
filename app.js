@@ -3,6 +3,7 @@ const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 
 const stuffRoutes = require('./routes/stuff');
+const userRoutes = require('./routes/user');
 
 mongoose.connect('mongodb://julieinfo:oSKzrr8Bv6R0latf@ac-vzmjcws-shard-00-00.osj82rh.mongodb.net:27017,ac-vzmjcws-shard-00-01.osj82rh.mongodb.net:27017,ac-vzmjcws-shard-00-02.osj82rh.mongodb.net:27017/?ssl=true&replicaSet=atlas-dxo06e-shard-0&authSource=admin&appName=Cluster0')
   .then(() => console.log('Connexion à MongoDB réussie !'))
@@ -22,5 +23,6 @@ app.use((req, res, next) => {
 app.use(bodyParser.json());
 
 app.use('/api/stuff', stuffRoutes);
+app.use('/api/auth', userRoutes);
 
 module.exports = app;
