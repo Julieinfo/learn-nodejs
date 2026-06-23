@@ -1,4 +1,4 @@
-# 📚 Cours — Passez au Full Stack avec Node.js, Express et MongoDB
+# 📚 Cours - Passez au Full Stack avec Node.js, Express et MongoDB
 
 > Cours suivi sur [OpenClassrooms](https://openclassrooms.com/fr/courses/6390246-passez-au-full-stack-avec-node-js-express-et-mongodb) · Niveau intermédiaire · ~10h
 
@@ -13,29 +13,29 @@
 
 ## 🎯 Objectif
 
-Appliquer ses compétences JavaScript au développement **back-end** en construisant une API RESTful complète avec Node.js, Express et MongoDB — sans toucher au front-end (fourni).
+Appliquer ses compétences JavaScript au développement **back-end** en construisant une API RESTful complète avec Node.js, Express et MongoDB - sans toucher au front-end (fourni).
 
 ---
 
 ## 🗂️ Contenu du cours
 
-### Partie 1 — Créer un serveur Express simple
+### Partie 1 - Créer un serveur Express simple
 - Démarrer un serveur Node.js
 - Créer une application Express
 - Implémenter des routes GET et POST
 
-### Partie 2 — Créer une API RESTful
+### Partie 2 - Créer une API RESTful
 - Configurer MongoDB Atlas et connecter l'API
 - Créer un schéma de données avec Mongoose
 - Implémenter les opérations **CRUD** (Create, Read, Update, Delete)
 
-### Partie 3 — Authentification
+### Partie 3 - Authentification
 - Organiser la structure back-end (routes / controllers)
 - Créer des utilisateurs avec hashage de mot de passe (**bcrypt**)
 - Générer et vérifier des **tokens JWT**
 - Mettre en place un middleware d'authentification
 
-### Partie 4 — Gestion des fichiers utilisateur
+### Partie 4 - Gestion des fichiers utilisateur
 - Accepter et stocker des fichiers images avec **Multer**
 - Adapter les routes CRUD pour les requêtes multipart
 - Supprimer les fichiers liés lors d'une suppression d'objet
@@ -47,9 +47,9 @@ Appliquer ses compétences JavaScript au développement **back-end** en construi
 | Outil | Rôle |
 |-------|------|
 | Node.js | Environnement d'exécution JavaScript côté serveur |
-| Express | Framework web — routes, middleware |
+| Express | Framework web - routes, middleware |
 | MongoDB Atlas | Base de données NoSQL cloud |
-| Mongoose | ODM — schémas et modèles |
+| Mongoose | ODM - schémas et modèles |
 | bcrypt | Hashage des mots de passe |
 | jsonwebtoken | Génération et vérification des JWT |
 | Multer | Gestion des uploads de fichiers |
@@ -75,4 +75,4 @@ Appliquer ses compétences JavaScript au développement **back-end** en construi
 
 ## 👩‍💻 Auteure
 
-**Julie de Castro** — [GitHub](https://github.com/julieinfo) · [Portfolio](https://julieinfo.github.io)
+**Julie de Castro** - [GitHub](https://github.com/julieinfo) · [Portfolio](https://julieinfo.github.io)
