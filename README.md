@@ -75,4 +75,4 @@ Appliquer ses compétences JavaScript au développement **back-end** en construi
 
 ## 👩‍💻 Auteure
 
-**Julie de Castro** - [GitHub](https://github.com/julieinfo) · [Portfolio](https://julieinfo.github.io)
+**Julie De Castro** - [GitHub](https://github.com/julieinfo) · [Portfolio](https://julieinfo.github.io)
